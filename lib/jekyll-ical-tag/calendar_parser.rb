@@ -47,10 +47,10 @@ module Jekyll
           e.dtend = occurrence.end_time
         end
       end
-
       def is_duplicate_event?(event, occurrence)
-        event.dtstart.to_time == occurrence.start_time.to_time ||
-          event.dtend.to_time == occurrence.end_time.to_time
+        start_time_match = event.dtstart.to_time == occurrence.start_time.to_time
+        end_time_match = event.dtend.respond_to?(:to_time) && event.dtend.to_time == occurrence.end_time.to_time
+        start_time_match || end_time_match
       end
     end
   end
