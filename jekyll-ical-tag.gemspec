@@ -27,6 +27,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "jekyll", "> 3"
+  spec.add_dependency "liquid", "> 4"
   spec.add_dependency "api_cache"
   spec.add_dependency "activesupport", "~> 7.1"
   spec.add_dependency "icalendar", "~> 2.10.1"
