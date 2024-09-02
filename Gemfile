@@ -1,7 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", require: false
-
+gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]
 gem "activesupport"
 gem "api_cache"
 gem "icalendar", "~> 2.10.1"
