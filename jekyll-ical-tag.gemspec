@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "lib/jekyll-ical-tag/version"
+require_relative "lib/jekyll-ical-tag/version"
 
 Gem::Specification.new do |spec|
   spec.name = "jekyll-ical-tag"
